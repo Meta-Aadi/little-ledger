@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Little Ledger ♡</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div class="page-decoration decoration-one">✿</div>
+    <div class="page-decoration decoration-two">♡</div>
+
+
+    <header>
+
+    <img
+        src="cat-mascot.png"
+        alt="Little Ledger cat mascot"
+        class="cat-mascot"
+    >
+
+    <div class="brand-row">
+            <span class="brand-flower">✿</span>
+
+            <div>
+                <h1>Little Ledger</h1>
+                <p>Your spending, simply.</p>
+            </div>
+        </div>
+
+        <div class="tiny-note">
+            <span>♡</span> keeping track of the little things
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =========================
+             SUMMARY
+        ========================== -->
+
+        <section class="summary">
+
+            <div class="summary-card total-card">
+
+                <div class="card-label">
+                    <span>🌿</span>
+                    <p>Total spending</p>
+                </div>
+
+                <h2 id="total-spending">₹0</h2>
+
+                <span class="card-note">
+                    every little bit counts
+                </span>
+
+            </div>
+
+
+            <div class="summary-card highest-card">
+
+                <div class="card-label">
+                    <span>🍓</span>
+                    <p>Highest expense</p>
+                </div>
+
+                <h2 id="highest-expense">₹0</h2>
+
+                <span class="card-note">
+                    your biggest little splurge
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             ADD EXPENSE
+        ========================== -->
+
+        <section class="add-expense">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="little-label">✎ NEW ENTRY</span>
+                    <h2>Add an expense</h2>
+                </div>
+
+                <span class="heading-decoration">♡</span>
+
+            </div>
+
+
+            <form>
+
+                <label for="description">
+                    What did you spend on?
+                </label>
+
+                <input
+                    type="text"
+                    id="description"
+                    placeholder="e.g. Pizza with friends"
+                    autocomplete="off"
+                >
+
+
+                <div class="expense-details">
+
+                    <div>
+
+                        <label for="category">
+                            Category
+                        </label>
+
+                        <select id="category">
+
+                            <option value="food">
+                                🍴 Food
+                            </option>
+
+                            <option value="travel">
+                                🚗 Travel
+                            </option>
+
+                            <option value="shopping">
+                                🛍️ Shopping
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="amount">
+                            Amount
+                        </label>
+
+                        <input
+                            type="number"
+                            id="amount"
+                            placeholder="₹0"
+                            min="1"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button type="submit">
+                    Add to my ledger <span>♡</span>
+                </button>
+
+            </form>
+
+        </section>
+
+
+
+        <!-- =========================
+             CATEGORY SUMMARY
+        ========================== -->
+
+        <section class="category-summary">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="little-label">✿ A LITTLE BREAKDOWN</span>
+                    <h2>Where is it going?</h2>
+                </div>
+
+            </div>
+
+
+            <div class="category-list">
+
+                <div class="category-item">
+
+                    <div class="category-name">
+                        <span class="category-icon food-icon">🍴</span>
+                        <span>Food</span>
+                    </div>
+
+                    <span id="food-total">₹0</span>
+
+                </div>
+
+
+                <div class="category-item">
+
+                    <div class="category-name">
+                        <span class="category-icon travel-icon">🚗</span>
+                        <span>Travel</span>
+                    </div>
+
+                    <span id="travel-total">₹0</span>
+
+                </div>
+
+
+                <div class="category-item">
+
+                    <div class="category-name">
+                        <span class="category-icon shopping-icon">🛍️</span>
+                        <span>Shopping</span>
+                    </div>
+
+                    <span id="shopping-total">₹0</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             RECENT EXPENSES
+        ========================== -->
+
+        <section class="recent-expenses">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="little-label">♡ YOUR ENTRIES</span>
+                    <h2>Recent expenses</h2>
+                </div>
+
+            </div>
+
+
+            <div id="expense-list">
+
+                <p class="empty-message">
+                    🌱<br>
+                    Your little ledger is empty.<br>
+                    <span>Add your first expense above.</span>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <div class="footer-flower">✿</div>
+
+        <p>
+            little ledger · made for the little things
+        </p>
+
+        <span>♡</span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```

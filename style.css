@@ -1,0 +1,949 @@
+```css
+/* =========================================================
+   LITTLE LEDGER
+   Cute Journal / Stationery Theme
+   ========================================================= */
+
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    min-height: 100vh;
+
+    max-width: 900px;
+    margin: auto;
+
+    padding: 45px 25px 30px;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(222, 194, 170, 0.16),
+            transparent 25%
+        ),
+        #f8f4ec;
+
+    color: #3c3935;
+
+    font-family: "DM Sans", Arial, sans-serif;
+
+    line-height: 1.5;
+
+    position: relative;
+}
+
+
+/* =========================
+   DECORATIONS
+========================= */
+
+.page-decoration {
+    position: fixed;
+
+    color: #c99482;
+
+    font-family: Georgia, serif;
+
+    pointer-events: none;
+
+    opacity: 0.45;
+}
+
+.decoration-one {
+    top: 45px;
+    left: 7%;
+    font-size: 25px;
+    transform: rotate(-15deg);
+}
+
+.decoration-two {
+    bottom: 12%;
+    right: 7%;
+    font-size: 24px;
+    transform: rotate(12deg);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    margin-bottom: 35px;
+    position: relative;
+    min-height: 120px;
+}
+
+
+.brand-row {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+}
+
+
+.brand-flower {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 43px;
+    height: 43px;
+
+    background: #e8eee2;
+
+    border-radius: 50%;
+
+    color: #718066;
+
+    font-size: 20px;
+
+    transform: rotate(-8deg);
+}
+
+
+header h1 {
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 43px;
+
+    font-weight: 500;
+
+    letter-spacing: -1.5px;
+
+    color: #383531;
+}
+
+
+header p {
+    margin-top: 1px;
+
+    color: #8c8379;
+
+    font-size: 14px;
+}
+
+
+.tiny-note {
+    margin-top: 14px;
+
+    padding-left: 57px;
+
+    color: #a09186;
+
+    font-size: 12px;
+
+    font-style: italic;
+}
+
+.tiny-note span {
+    color: #c48678;
+
+    margin-right: 3px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    margin-bottom: 20px;
+
+    padding: 27px;
+
+    background: rgba(255, 253, 248, 0.92);
+
+    border: 1px solid #e8dfd2;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 4px 20px rgba(80, 65, 45, 0.035);
+}
+
+
+.section-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    margin-bottom: 21px;
+}
+
+
+section h2 {
+    margin-top: 4px;
+
+    margin-bottom: 0;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 23px;
+
+    font-weight: 500;
+
+    color: #3c3935;
+}
+
+
+.little-label {
+    color: #9a897d;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    letter-spacing: 1.2px;
+}
+
+
+.heading-decoration {
+    color: #c98b7b;
+
+    font-size: 22px;
+
+    transform: rotate(10deg);
+}
+
+
+/* =========================
+   SUMMARY
+========================= */
+
+.summary {
+    display: flex;
+
+    gap: 17px;
+
+    padding: 0;
+
+    background: transparent;
+
+    border: none;
+
+    box-shadow: none;
+}
+
+
+.summary-card {
+    flex: 1;
+
+    min-height: 155px;
+
+    padding: 23px;
+
+    border-radius: 20px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.summary-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 22px rgba(80, 65, 45, 0.07);
+}
+
+
+.total-card {
+    background: #e9eee4;
+
+    border: 1px solid #dfe7d9;
+}
+
+
+.highest-card {
+    background: #f4e5df;
+
+    border: 1px solid #ecd8d0;
+}
+
+
+.card-label {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+.card-label span {
+    font-size: 14px;
+}
+
+
+.card-label p {
+    color: #77756d;
+
+    font-size: 13px;
+}
+
+
+.summary-card h2 {
+    margin-top: 12px;
+
+    font-family: "DM Sans", Arial, sans-serif;
+
+    font-size: 31px;
+
+    font-weight: 600;
+
+    letter-spacing: -0.5px;
+}
+
+
+.card-note {
+    display: block;
+
+    margin-top: 13px;
+
+    color: #8a877f;
+
+    font-size: 11px;
+
+    font-style: italic;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+label {
+    color: #716b63;
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+
+input,
+select {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    background: #fffefa;
+
+    color: #3c3935;
+
+    border: 1px solid #ded5c8;
+
+    border-radius: 11px;
+
+    font-family: "DM Sans", Arial, sans-serif;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+
+input:hover,
+select:hover {
+    background: #fffdf9;
+}
+
+
+input:focus,
+select:focus {
+    background: white;
+
+    border-color: #9cac91;
+
+    box-shadow:
+        0 0 0 3px rgba(156, 172, 145, 0.14);
+}
+
+
+input::placeholder {
+    color: #b1a99f;
+}
+
+
+.expense-details {
+    display: flex;
+
+    gap: 14px;
+
+    margin-top: 7px;
+}
+
+
+.expense-details > div {
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    margin-top: 10px;
+
+    padding: 13px 20px;
+
+    background: #718267;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 11px;
+
+    font-family: "DM Sans", Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+
+button span {
+    margin-left: 4px;
+
+    font-size: 13px;
+}
+
+
+button:hover {
+    background: #617357;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 13px rgba(95, 112, 87, 0.18);
+}
+
+
+button:active {
+    transform: translateY(1px);
+
+    box-shadow: none;
+}
+
+
+/* =========================
+   CATEGORY SUMMARY
+========================= */
+
+.category-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.category-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 10px 2px;
+
+    border-bottom: 1px dashed #e6ded3;
+}
+
+
+.category-item:last-child {
+    border-bottom: none;
+}
+
+
+.category-name {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 14px;
+}
+
+
+.category-icon {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+}
+
+
+.food-icon {
+    background: #f4e7d5;
+}
+
+
+.travel-icon {
+    background: #e3ece4;
+}
+
+
+.shopping-icon {
+    background: #f1e1e4;
+}
+
+
+.category-item > span:last-child {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #55514b;
+}
+
+
+/* =========================
+   EXPENSE LIST
+========================= */
+
+#expense-list {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.empty-message {
+    padding: 27px 0;
+
+    color: #999087;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    line-height: 2;
+}
+
+
+.empty-message span {
+    color: #aaa199;
+
+    font-size: 12px;
+
+    font-style: italic;
+}
+
+
+.expense-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 14px 4px;
+
+    border-bottom: 1px dashed #e6ded3;
+
+    animation: expenseAppear 0.25s ease;
+
+    transition:
+        transform 0.15s ease,
+        padding-left 0.15s ease;
+}
+
+
+.expense-item:last-child {
+    border-bottom: none;
+}
+
+
+.expense-item:hover {
+    transform: translateX(3px);
+}
+
+
+.expense-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.expense-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+.expense-icon {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+
+    background: #f2eee6;
+
+    border-radius: 11px;
+
+    font-size: 17px;
+}
+
+
+.expense-title strong {
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+.expense-info small {
+    margin-left: 44px;
+
+    color: #999087;
+
+    font-size: 11px;
+
+    text-transform: capitalize;
+}
+
+
+.expense-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 3px;
+}
+
+
+.expense-amount {
+    margin-right: 7px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   EDIT / DELETE
+========================= */
+
+.edit-button,
+.delete-button {
+    width: 30px;
+    height: 30px;
+
+    margin: 0;
+
+    padding: 0;
+
+    background: transparent;
+
+    color: #aaa199;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: normal;
+
+    box-shadow: none;
+}
+
+
+.edit-button:hover {
+    background: #e9eee4;
+
+    color: #687b5e;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+.delete-button:hover {
+    background: #f3e6e1;
+
+    color: #a56e61;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+.edit-button:active,
+.delete-button:active {
+    transform: scale(0.9);
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes expenseAppear {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 32px;
+
+    color: #a1988f;
+
+    font-size: 11px;
+
+    text-align: center;
+}
+
+
+.footer-flower {
+    margin-bottom: 5px;
+
+    color: #b99483;
+
+    font-size: 15px;
+}
+
+
+footer span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #c98b7b;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 28px 15px 25px;
+    }
+
+
+    header {
+        margin-bottom: 28px;
+    }
+
+
+    header h1 {
+        font-size: 35px;
+    }
+
+
+    .brand-flower {
+        width: 39px;
+        height: 39px;
+
+        font-size: 18px;
+    }
+
+
+    .tiny-note {
+        padding-left: 51px;
+
+        font-size: 11px;
+    }
+
+
+    .summary {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    .summary-card {
+        min-height: 135px;
+    }
+
+
+    section {
+        padding: 21px;
+
+        border-radius: 17px;
+    }
+
+
+    section h2 {
+        font-size: 21px;
+    }
+
+
+    .expense-details {
+        flex-direction: column;
+
+        gap: 9px;
+    }
+
+
+    button {
+        width: 100%;
+    }
+
+
+    .expense-item {
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+
+    .expense-right {
+        gap: 1px;
+    }
+
+
+    .expense-amount {
+        margin-right: 2px;
+    }
+
+
+    .expense-title strong {
+        max-width: 130px;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+
+        white-space: nowrap;
+    }
+
+
+    .page-decoration {
+        display: none;
+    }
+}
+/* =========================
+   CAT MASCOT
+========================= */
+
+.cat-mascot {
+    position: absolute;
+
+    width: 135px;
+
+    right: 5px;
+    top: 25px;
+
+    transform: rotate(3deg);
+
+    filter: drop-shadow(
+        0 6px 8px rgba(80, 65, 45, 0.08)
+    );
+
+    transition:
+        transform 0.25s ease;
+}
+
+.cat-mascot:hover {
+    transform:
+        rotate(-3deg)
+        translateY(-4px);
+}
+
+
+/* Keep the cat from getting in the way on phones */
+
+@media (max-width: 600px) {
+
+    .cat-mascot {
+        width: 95px;
+
+        right: 0;
+        top: 20px;
+    }
+
+}
